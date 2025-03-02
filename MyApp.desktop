@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=BlueChickServer
+Type=Application
+Terminal=false
+Comment=Some Comments about your program
+Exec=bash -i /path/to/launcher/launcher.sh
