@@ -42,11 +42,17 @@ sudo apt upgrade
 <br/>
 <img src="./figs/Rasppiterminal.png" text='Using the terminal' align=left /><br/>
 <br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
 
 
 
 
 
+   
 In order to install the required libraries for the server, type this in the terminal:
 
 python -m venv ~/py_envs
