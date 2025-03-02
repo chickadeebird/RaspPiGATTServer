@@ -76,5 +76,5 @@ You need to edit that file to change the location of the following to wherever y
 
 Exec=bash -i /path/to/launcher/launcher.sh
 
-The raspberry pi should now reboot to have the blue bluetooth screen visible. Sometimes, without explanation that I can find, the blue screen will not boot to a full screen. Restarting the raspberry pi seems to fix this.
+The raspberry pi should now reboot to have the blue, bluetooth screen visible. Sometimes, without explanation that I can find, the blue screen will not boot to a full screen. Restarting the raspberry pi seems to fix this.
 
