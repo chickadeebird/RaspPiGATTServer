@@ -37,8 +37,7 @@ Once the raspberry pi boots up, open a terminal:
 <br/>
 In order to upgrade the raspberry pi installation to the latest available libraries, type:
 
-sudo apt update
-
+sudo apt update<br/>
 sudo apt upgrade  
 <br/>
 <img src="./figs/Rasppiterminal.png" text='Using the terminal' align=left /><br/>
@@ -55,7 +54,27 @@ python -m venv ~/py_envs
 
 sudo apt-get install python3-pil.imagetk
 
-To have the bluetooth server appear at startup, modify the ********* file to add the following line:
+## Setup the server to launch on startup
 
-*******************************
+Move or place the launcher.sh in some directory such as the home directory. You then need to make that file executable, so run the following command:
+
+chmod 777 launcher.sh
+
+You need to edit that file to change the location of the 'cd /path/to/server/GATT' to wherever you placed the directory that includes the BlueChickServer.py file. You can use the following to edit the file:
+
+sudo nano launcher.sh
+
+From the home directory, make the subdirectory:
+
+mkdir .config/autostart
+
+Place the MyApp.desktop in the .config/autostart directory. You then need to make that file executable, so run the following command:
+
+chmod 777 .config/autostat/MyApp.desktop
+
+You need to edit that file to change the location of the following to wherever you placed the launcher.sh file. Again, you can use the 'sudo nano MyApp.desktop' to edit the file wherever you placed it:
+
+Exec=bash -i /path/to/launcher/launcher.sh
+
+The raspberry pi should now reboot to have the blue bluetooth screen visible. Sometimes, without explanation that I can find, the blue screen will not boot to a full screen. Restarting the raspberry pi seems to fix this.
 
