@@ -25,7 +25,7 @@ Place the SD card into the raspberry pi and turn it on. A monitor with keyboard 
 
 ## Setup the server
 
-Once the raspberry pi boots up, open a terminal:
+Once the raspberry pi boots up, open a terminal:  
 
 <img src="./figs/Rasppimainscreenterminal.png" text='Open a terminal' align=left />
 
@@ -33,7 +33,7 @@ In order to upgrade the raspberry pi installation to the latest available librar
 
 sudo apt update
 
-sudo apt upgrade
+sudo apt upgrade  
 
 <img src="./figs/Rasppiterminal.png" text='Using the terminal' align=left />
 
