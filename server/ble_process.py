@@ -69,7 +69,7 @@ class BLEProcess(Process):
             bus=self._system_bus,
             index=0,
             adapter_obj=adapter_obj,
-            uuid="0d389e0f-25dc-4070-9135-400b81e543ce",
+            uuid="64c9c10d-513c-479d-af57-b1096730c39d",
             name="Chickadee Bluetooth Pi",
         )
 
