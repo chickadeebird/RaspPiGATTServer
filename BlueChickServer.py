@@ -3,6 +3,7 @@ import tkinter as tk
 import time
 import dbus
 from server.ble_process import BLEProcess
+from PIL import Image, ImageTk
 
 
 dbus.mainloop.glib.DBusGMainLoop(set_as_default=True)
@@ -16,9 +17,15 @@ def gui(queue):
     
     root = tk.Tk()
     root.attributes('-fullscreen', True)
-    # root.config(cursor="none")
-    frame = tk.Frame(root, width=200, height=200, background="red")
+    root.config(cursor="none")
+    frame = tk.Frame(root, width=200, height=200, background="blue")
     frame.pack(fill=tk.BOTH, expand=True)
+    
+    image = Image.open("BluetoothImage.png")
+    image = image.resize((250, 250), Image.Resampling.LANCZOS)
+    photo_image = ImageTk.PhotoImage(image)
+    image_label = tk.Label(frame, image=photo_image, background="blue")
+    image_label.pack(side='bottom', anchor='sw')
     
     output_queue = multiprocessing.Queue()
 
@@ -28,6 +35,7 @@ def gui(queue):
     def update_label():
         try:
             curr_value = output_queue.get(timeout=1)
+            image_label.pack_forget()
             uuid = curr_value['uuid']
             sent_value = curr_value['value']
             # string_value = sent_value.split('\\x')[-1]
