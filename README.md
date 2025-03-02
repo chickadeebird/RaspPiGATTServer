@@ -8,13 +8,13 @@ This repository can be downloaded in .zip format and unzipped in a directory on 
 Initial installation would be to download the installer from here:
 
 https://www.raspberrypi.com/software/
-
-<img src="./figs/Rpiinstallerdownload.png" text='Raspberry Pi Installer Download' align=left />
-
+  
+<img src="./figs/Rpiinstallerdownload.png" text='Raspberry Pi Installer Download' align=left />  
+  
 After the installer is downloaded, the settings I use to install the Raspberry Pi OS in early 2025 are (the installer settings may evolve over time):
-
-<img src="./figs/Rpiinstaller.png" text='Raspberry Pi Installer' align=left />
-
+  
+<img src="./figs/Rpiinstaller.png" text='Raspberry Pi Installer' align=left />  
+  
 For troubleshooting and configuration, this web page may be helpful:
 
 https://www.raspberrypi.com/documentation/computers/configuration.html
