@@ -27,19 +27,22 @@ Place the SD card into the raspberry pi and turn it on. A monitor with keyboard 
 
 Once the raspberry pi boots up, open a terminal:
 
-<img src="./figs/Raspimainscreenterminal.png" text='Open a terminal' align=left />
+<img src="./figs/Rasppimainscreenterminal.png" text='Open a terminal' align=left />
 
 In order to upgrade the raspberry pi installation to the latest available libraries, type:
 
 sudo apt update
+
 sudo apt upgrade
 
-<img src="./figs/Raspiterminal.png" text='Using the terminal' align=left />
+<img src="./figs/Rasppiterminal.png" text='Using the terminal' align=left />
 
 In order to install the required libraries for the server, type this in the terminal:
 
 python -m venv ~/py_envs
+
 ~/py_envs/bin/pip install pillow
+
 sudo apt-get install python3-pil.imagetk
 
 To have the bluetooth server appear at startup, modify the ********* file to add the following line:
