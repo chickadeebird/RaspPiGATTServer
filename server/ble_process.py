@@ -79,13 +79,13 @@ class BLEProcess(Process):
         example_service = Service(
             bus=self._system_bus,
             index=0,
-            uuid="0d389e0f-25dc-4070-9135-400b81e543ce",
+            uuid="64c9c10d-513c-479d-af57-b1096730c39d",
             primary=True,
             output_queue=self._output_queue,
         )
 
         example_service.add_characteristic(
-            "2a0f87c9-7270-4c3e-aaa3-647961dfffa3", ["read", "write"], "Test Characteristic", "Hello PyConDE"
+            "a1d47af7-4df0-4fc5-a598-56ac5d4cb4bd", ["read", "write"], "Test Characteristic", "Hello PyConDE"
         )
 
         app.add_service(example_service)
